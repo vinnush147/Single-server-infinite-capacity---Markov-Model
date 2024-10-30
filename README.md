@@ -1,4 +1,5 @@
 # Single server with infinite capacity (M/M/1):(oo/FIFO)
+# DATE : 
 ## Aim :
 To find (a) average number of materials in the system (b) average number of materials in the conveyor (c) waiting time of each material in the system (d) waiting time of each material in the conveyor, if the arrival  of materials follow poisson process with the mean interval time 12 seconds, serivice time of lathe machine follows exponential distribution with mean serice time 1 second and average service time of robot is 7seconds.
 
@@ -15,9 +16,18 @@ This is a queuing model in which the arrival is Marcovian and departure distribu
 ## Procedure :
 
 ![imAGE](2.png)
+
+
+
+## Experiment:
+
+![319135939-1cf24c0a-dbef-45f0-af4b-f3e857985529](https://github.com/RoopakCS/Single-server-infinite-capacity---Markov-Model/assets/139228922/5e6d3f48-8acd-4d46-9879-b9964233db9a)
  
-## Program :
+## Program
 ```
+#Developed by: RIYA P L
+#Register number: 212223240141
+
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time=float(input("Enter the mean  inter service time of Lathe Machine (in secs) :  "))
 Robot_time=float(input("Enter the Additional time taken for the Robot (in secs) :  "))
@@ -43,12 +53,8 @@ else:
     print("Warning! Objects Over flow will happen in the conveyor")
 print("---------------------------------------------------------------")
 ```
-
-
 ## Output :
-
-![image](https://github.com/user-attachments/assets/2889f365-831f-4081-b206-fc48be55f1bf)
+![Screenshot 2024-10-27 193346](https://github.com/user-attachments/assets/2cbda4c3-e991-4b32-a46c-c15b8c16c632)
 
 ## Result :
-
 The average number of material in the sysytem and in the conveyor and waiting time are successfully found.
